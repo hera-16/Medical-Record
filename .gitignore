@@ -1,0 +1,9 @@
+## Visual Studio / .NET build artifacts
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+
+## Claude Code local settings (session-specific permissions)
+.claude/settings.local.json
