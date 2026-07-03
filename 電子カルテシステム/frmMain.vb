@@ -7,6 +7,10 @@ Public Class frmMain
     Private ReadOnly _karteService As New Services.KarteService()
     Private _currentList As New List(Of Models.Patient)
 
+    Public Sub New()
+        InitializeComponent()
+    End Sub
+
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitializeGridColumns()
         SeedSampleData()
