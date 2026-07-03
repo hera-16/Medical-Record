@@ -50,17 +50,43 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Patient.vb" />
     <Compile Include="Models\KarteRecord.vb" />
     <Compile Include="Services\PatientService.vb" />
     <Compile Include="Services\KarteService.vb" />
+    <Compile Include="Program.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientEdit.Designer.vb">
+      <DependentUpon>frmPatientEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKarte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKarte.Designer.vb">
+      <DependentUpon>frmKarte.vb</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
